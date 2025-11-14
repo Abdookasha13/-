@@ -1,0 +1,168 @@
+/* ------------------------------- Herosection -------------------- */
+.herosection {
+  background-color: var(--dark-blue-bg);
+}
+
+.herosection-content-right p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+}
+
+.herosection-content-right h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+}
+
+.herosection-content-right span {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--mov-color);
+  margin-bottom: 1rem;
+}
+
+.herosection-content-btns button {
+  padding: 1rem 4rem;
+  background-color: var(--mov-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.herosection-content-btns button:hover {
+  opacity: 0.7;
+}
+
+.statistics {
+  margin: 3rem 0;
+}
+
+.statistics-item h2 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.statistics-item p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.statistics-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.prosthetic-img {
+  border-radius: 50%;
+  width: 8.7rem;
+  height: 8.7rem;
+  object-fit: cover;
+  background-color: var(--mov-color);
+  margin-bottom: 2rem;
+}
+
+.prosthetic {
+  background-color: #3a4462;
+  padding: 4rem 2rem;
+}
+
+.prosthetic h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.prosthetic p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.prosthetic span {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--mov-color);
+}
+
+.vedio-player,
+.vedio-player2 {
+  height: 9.4rem;
+  width: 9.4rem;
+  border-radius: 50%;
+  font-size: 4.2rem;
+  cursor: pointer;
+  background-color: var(--white-color);
+  color: var(--mov-color);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 40px var(--mov-color);
+}
+
+/* ---------------------movement-section-------------------- */
+.movement-section {
+  padding: 8rem 0;
+  background-color: var(--white-color);
+}
+
+.movement-section h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--dark-blue-bg);
+  margin-bottom: 2rem;
+}
+
+.movement-section p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--muted-text);
+  margin-bottom: 2rem;
+}
+
+.movement-section h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--mov-color);
+  margin-bottom: 3rem;
+}
+
+.movement-section img {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+/* ---------------------support-section-------------------- */
+
+.support-section {
+  padding: 8rem 0;
+  background-color: var(--container-bg);
+}
+
+.support-description {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--muted-text);
+  margin-bottom: 6rem;
+}
+
+.vedio-player2 {
+  top: 50%;
+  left: 50%;
+}
+
+/* -----------------section-six------------------- */
+.section-six {
+  background-color: #F3F1FB;
+}
+
