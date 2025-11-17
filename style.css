@@ -48,9 +48,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.9s;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Almarai", sans-serif;
 }
 
 body {
@@ -94,6 +93,7 @@ ul {
   border-radius: 0.8rem;
   font-size: 1.6rem;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn-core:hover {
@@ -185,6 +185,7 @@ ul {
   box-shadow: -4px 0 6px var(--shadow-color-2);
   padding: 4rem 2rem;
   z-index: 1000;
+  transition: 0.6s;
 }
 
 .side-bar-links.open-side-bar {
@@ -197,6 +198,7 @@ ul {
   padding: 1rem 0;
   border: 1px solid var(--dark-blue-bg);
   border-radius: 0.8rem;
+  transition: 0.6s;
 }
 
 .side-bar-links ul li:hover {
@@ -222,6 +224,10 @@ ul {
   line-height: 1.6;
 }
 
+.header-content-right{
+  padding-top: 8.2rem;
+}
+
 .header-content-btn {
   padding: 1.2rem 4rem;
 }
@@ -244,7 +250,14 @@ ul {
 }
 
 .header-img {
-  transform: translateX(-12rem);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.header-img img {
+  width: 500px;
+  object-fit: cover;
 }
 
 /* -----------------------section one------------------- */
@@ -271,6 +284,7 @@ ul {
   font-weight: 400;
   color: var(--mov-color);
   margin-bottom: 2rem;
+  font-family: Amiri, serif;
 }
 
 .section-one-box {
@@ -281,6 +295,7 @@ ul {
   align-items: center;
   border: 1px solid var(--shadow-color-2);
   border-radius: 1.2rem;
+  transition: 0.6s;
 }
 
 .section-one-box:hover {
@@ -326,6 +341,7 @@ ul {
 .section-two-box {
   background-color: var(--white-color);
   border-radius: 1.2rem;
+  transition: 0.6s;
 }
 
 .section-two-box:hover {
@@ -383,6 +399,7 @@ ul {
   padding: 1rem 1.2rem;
   border-radius: 0.8rem;
   color: var(--mov-color);
+  transition: 0.6s;
 }
 
 .donation-cart span:hover {
@@ -393,6 +410,7 @@ ul {
 .donation-cart button {
   padding: 1rem 0;
   width: 85%;
+  transition: 0.6s;
 }
 
 .show-all-btn button {
@@ -451,6 +469,7 @@ ul {
   border: 1px solid var(--border-color);
   border-radius: 1.2rem;
   cursor: pointer;
+  transition: 0.6s;
 }
 
 .accordion-header:hover {
@@ -460,14 +479,17 @@ ul {
 .accordion-content {
   max-height: 0;
   overflow: hidden;
+  transition: max-height 0.6s ease;
 }
 
 .open-accordion {
   max-height: 500px;
+  transition: max-height 0.6s ease;
 }
 
 .rotate-arrow {
   transform: rotate(180deg);
+  transition: transform 0.6s ease;
 }
 
 /* ------------------section four------------------- */
@@ -481,13 +503,16 @@ ul {
   font-weight: 400;
   color: var(--mov-color);
   margin-bottom: 1rem;
+  font-family: Amiri, serif;
 }
 
 .section-four-header-text h2 {
   width: 65%;
+  line-height: 1.5;
   font-size: 4.8rem;
   font-weight: 700;
   color: var(--dark-blue-bg);
+  font-family: Almarai, sans-serif;
 }
 
 .section-four-header button {
@@ -497,6 +522,7 @@ ul {
 .section-four-box {
   background-color: var(--white-color);
   border-radius: 1.2rem;
+  transition: 0.6s;
 }
 
 .section-four-box:hover {
@@ -649,6 +675,10 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+
+.footer-links a {
+  transition: 0.6s;
 }
 
 .footer-links a:hover {
