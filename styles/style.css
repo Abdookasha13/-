@@ -846,9 +846,6 @@ hr {
   }
 
   /* margins & paddings */
-  .header {
-    padding: 2rem 2rem;
-  }
   .section-one {
     margin: 8rem auto;
   }
@@ -910,10 +907,6 @@ hr {
   .section-five p {
     font-size: 1.6rem;
   }
-
-  .header {
-    padding: 1.8rem 1.5rem;
-  }
   .section-one {
     margin: 6rem auto;
   }
@@ -974,10 +967,6 @@ hr {
   }
   .section-five p {
     font-size: 1.4rem;
-  }
-
-  .header {
-    padding: 1.5rem 1rem;
   }
   .section-one {
     margin: 5rem auto;
@@ -1041,9 +1030,6 @@ hr {
     font-size: 1.2rem;
   }
 
-  .header {
-    padding: 1rem 0.5rem;
-  }
   .section-one {
     margin: 4rem auto;
   }
