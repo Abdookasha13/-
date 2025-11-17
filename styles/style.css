@@ -100,51 +100,6 @@ ul {
   background-color: var(--dark-blue-bg);
 }
 
-
-@media (max-width: 1200px) {
-  html {
-    font-size: 58%;
-  }
-}
-
-@media (max-width: 992px) {
-  html {
-    font-size: 55%;
-  }
-
-  .accordions{
-    margin-top: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 52%;
-  }
-
-   .header-content h1 {
-    font-size: 3.2rem;
-  }
-
-  .header-content p {
-    font-size: 1.8rem;
-  }
-
-  .header-content-right {
-    padding-top: 4rem;
-  }
-
-  .accordions {
-    margin-top: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  html {
-    font-size: 50%;
-  }
-}
-
 /* --------------navbar------------------ */
 .nav-bar {
   position: relative;
@@ -257,7 +212,7 @@ ul {
   line-height: 1.6;
 }
 
-.header-content-right{
+.header-content-right {
   padding-top: 8.2rem;
 }
 
@@ -748,4 +703,357 @@ hr {
 .go-to-another-page a {
   color: var(--white-color);
   font-size: 2rem;
+}
+
+/* ---------------------media queries---------------------  */
+
+@media (min-width: 991px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .header-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    text-align: right;
+  }
+
+  .header-img img {
+    width: 500px;
+    object-fit: cover;
+  }
+}
+
+/* ------------ Tablet (768px - 991px) ------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-content p {
+    font-size: 2rem;
+  }
+
+  .header-content-right {
+    padding-top: 4rem;
+  }
+
+  .header-img {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* ------------ Mobile (أقل من 768px) ------------ */
+@media (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  .header-content p {
+    font-size: 1.8rem;
+  }
+
+  .header-content-right {
+    padding-top: 2rem;
+  }
+
+  .header-img {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-img img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* ------------ Desktop (≥ 1200px) ------------ */
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  } /* 1rem = 10px */
+  .header-content h1 {
+    font-size: 4.8rem;
+  }
+  .header-content p {
+    font-size: 2.4rem;
+  }
+  .section-text h2 {
+    font-size: 4.8rem;
+  }
+  .section-text p {
+    font-size: 2.4rem;
+  }
+  .section-one-box h3 {
+    font-size: 2.4rem;
+  }
+  .section-one-box p {
+    font-size: 1.6rem;
+  }
+  .section-two-box h3 {
+    font-size: 3.2rem;
+  }
+  .section-two-box p {
+    font-size: 1.8rem;
+  }
+  .section-three .row .col-md-6 h3 {
+    font-size: 4.8rem;
+  }
+  .section-three .row .col-md-6 h4 {
+    font-size: 1.8rem;
+  }
+  .section-four-header-text h2 {
+    font-size: 4.8rem;
+  }
+  .section-four-box h3 {
+    font-size: 2.4rem;
+  }
+  .section-four-box p {
+    font-size: 1.4rem;
+  }
+  .section-five h4 {
+    font-size: 3.2rem;
+  }
+  .section-five p {
+    font-size: 1.8rem;
+  }
+
+  /* margins & paddings */
+  .header {
+    padding: 2rem 2rem;
+  }
+  .section-one {
+    margin: 8rem auto;
+  }
+  .section-text {
+    margin-bottom: 6rem;
+  }
+  .section-three .row {
+    margin-bottom: 12rem;
+  }
+  .qs-form {
+    padding: 4rem;
+  }
+}
+
+/* ------------ Large Tablet (992px - 1199px) ------------ */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 58%;
+  }
+  .header-content h1 {
+    font-size: 4rem;
+  }
+  .header-content p {
+    font-size: 2rem;
+  }
+  .section-text h2 {
+    font-size: 4rem;
+  }
+  .section-text p {
+    font-size: 2rem;
+  }
+  .section-one-box h3 {
+    font-size: 2rem;
+  }
+  .section-one-box p {
+    font-size: 1.5rem;
+  }
+  .section-two-box h3 {
+    font-size: 2.8rem;
+  }
+  .section-two-box p {
+    font-size: 1.6rem;
+  }
+  .section-three .row .col-md-6 h3 {
+    font-size: 4rem;
+  }
+  .section-four-header-text h2 {
+    font-size: 4rem;
+  }
+  .section-four-box h3 {
+    font-size: 2rem;
+  }
+  .section-four-box p {
+    font-size: 1.3rem;
+  }
+  .section-five h4 {
+    font-size: 2.8rem;
+  }
+  .section-five p {
+    font-size: 1.6rem;
+  }
+
+  .header {
+    padding: 1.8rem 1.5rem;
+  }
+  .section-one {
+    margin: 6rem auto;
+  }
+  .section-text {
+    margin-bottom: 5rem;
+  }
+  .section-three .row {
+    margin-bottom: 10rem;
+  }
+  .qs-form {
+    padding: 3rem;
+  }
+}
+
+/* ------------ Tablet (768px - 991px) ------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 52%;
+  }
+  .header-content h1 {
+    font-size: 3.5rem;
+  }
+  .header-content p {
+    font-size: 1.8rem;
+  }
+  .section-text h2 {
+    font-size: 3.5rem;
+  }
+  .section-text p {
+    font-size: 1.8rem;
+  }
+  .section-one-box h3 {
+    font-size: 1.8rem;
+  }
+  .section-one-box p {
+    font-size: 1.4rem;
+  }
+  .section-two-box h3 {
+    font-size: 2.4rem;
+  }
+  .section-two-box p {
+    font-size: 1.4rem;
+  }
+  .section-three .row .col-md-6 h3 {
+    font-size: 3.5rem;
+  }
+  .section-four-header-text h2 {
+    font-size: 3.5rem;
+  }
+  .section-four-box h3 {
+    font-size: 1.8rem;
+  }
+  .section-four-box p {
+    font-size: 1.2rem;
+  }
+  .section-five h4 {
+    font-size: 2.4rem;
+  }
+  .section-five p {
+    font-size: 1.4rem;
+  }
+
+  .header {
+    padding: 1.5rem 1rem;
+  }
+  .section-one {
+    margin: 5rem auto;
+  }
+  .section-text {
+    margin-bottom: 4rem;
+  }
+  .section-three .row {
+    margin-bottom: 8rem;
+  }
+  .qs-form {
+    padding: 2.5rem;
+  }
+}
+
+/* ------------ Mobile (≤ 767px) ------------ */
+@media (max-width: 767px) {
+  html {
+    font-size: 48%;
+  }
+  .header-content h1 {
+    font-size: 3rem;
+  }
+  .header-content p {
+    font-size: 1.6rem;
+  }
+  .section-text h2 {
+    font-size: 3rem;
+  }
+  .section-text p {
+    font-size: 1.6rem;
+  }
+  .section-one-box h3 {
+    font-size: 1.6rem;
+  }
+  .section-one-box p {
+    font-size: 1.2rem;
+  }
+  .section-two-box h3 {
+    font-size: 2rem;
+  }
+  .section-two-box p {
+    font-size: 1.2rem;
+  }
+  .section-three .row .col-md-6 h3 {
+    font-size: 3rem;
+  }
+  .section-four-header-text h2 {
+    font-size: 3rem;
+  }
+  .section-four-box h3 {
+    font-size: 1.6rem;
+  }
+  .section-four-box p {
+    font-size: 1rem;
+  }
+  .section-five h4 {
+    font-size: 2rem;
+  }
+  .section-five p {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    padding: 1rem 0.5rem;
+  }
+  .section-one {
+    margin: 4rem auto;
+  }
+  .section-text {
+    margin-bottom: 3rem;
+  }
+  .section-three .row {
+    margin-bottom: 6rem;
+  }
+  .qs-form {
+    padding: 2rem;
+  }
 }
