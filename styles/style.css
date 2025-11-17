@@ -100,13 +100,46 @@ ul {
   background-color: var(--dark-blue-bg);
 }
 
-@media (max-width: 991px) {
+
+@media (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 58%;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+
+  .accordions{
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+
+   .header-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .header-content p {
+    font-size: 1.8rem;
+  }
+
+  .header-content-right {
+    padding-top: 4rem;
+  }
+
+  .accordions {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
   html {
     font-size: 50%;
   }
@@ -116,7 +149,7 @@ ul {
 .nav-bar {
   position: relative;
   background-color: var(--body-bg);
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   border-bottom-left-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
   box-shadow: 0 4px 6px var(--shadow-color-2);
