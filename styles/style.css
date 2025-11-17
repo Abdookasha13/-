@@ -461,36 +461,45 @@ ul {
   transform: translateX(clamp(1rem, 6vw, 10rem));
 }
 
+.accordion-custom .accordion-item {
+  border: none;
+}
+
+.accordion-custom .accordion-button {
+  border: 1px solid var(--border-color);
+  border-radius: 1.2rem !important;
+  padding: 1.2rem 1.5rem;
+  background: #fff;
+  color: var(--text-color);
+  font-size: var(--fs-sm);
+  box-shadow: none;
+  transition: 0.3s;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+  background-color: var(--container-bg);
+  color: var(--text-color);
+  box-shadow: none;
+}
+
+.accordion-custom .accordion-button:hover {
+  background-color: var(--container-bg);
+}
+
+.accordion-custom .accordion-body {
+  padding: 1rem 1.2rem;
+  font-size: var(--fs-sm);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 0 0 1rem 1rem;
+  background: #fff;
+}
+
 .accordions {
   margin-top: 2rem;
 }
 
-.accordion-header {
-  border: 1px solid var(--border-color);
-  border-radius: 1.2rem;
-  cursor: pointer;
-  transition: 0.6s;
-}
-
-.accordion-header:hover {
-  background-color: var(--container-bg);
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s ease;
-}
-
-.open-accordion {
-  max-height: 500px;
-  transition: max-height 0.6s ease;
-}
-
-.rotate-arrow {
-  transform: rotate(180deg);
-  transition: transform 0.6s ease;
-}
 
 /* ------------------section four------------------- */
 .section-four {

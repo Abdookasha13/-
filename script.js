@@ -1,16 +1,3 @@
-// ------------------------accordion--------------------------
-const accordions = document.querySelectorAll(".accordion-item");
-
-accordions.forEach((accordion) => {
-  const header = accordion.querySelector(".accordion-header");
-  const content = accordion.querySelector(".accordion-content");
-  const icon = accordion.querySelector(".accordion-icon");
-  header.addEventListener("click", () => {
-    content.classList.toggle("open-accordion");
-    icon.classList.toggle("rotate-arrow");
-  });
-});
-
 // -------------------------handle side bar------------------
 document
   .getElementsByClassName("side-bar-toggle")[0]
