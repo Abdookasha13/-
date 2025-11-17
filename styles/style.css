@@ -4,6 +4,11 @@
 :root {
   --body-bg: #fcfcfd;
   --container-bg: #e5e2f7;
+  /* Responsive typography & spacing scale */
+  --fs-sm: clamp(1.4rem, 1rem + 0.8vw, 1.8rem);
+  --fs-md: clamp(1.6rem, 1.1rem + 1.1vw, 2.2rem);
+  --fs-lg: clamp(2.4rem, 1.8rem + 2.4vw, 4.2rem);
+
   /* ------------------- */
   --mov-color: #897ae3;
   --dark-blue-bg: #101840;
@@ -56,7 +61,7 @@ body {
   background-color: var(--body-bg);
   color: var(--black-color);
   overflow-x: hidden;
-  font-size: 1.6rem;
+  font-size: var(--fs-md);
   direction: rtl;
   text-align: right;
 }
@@ -91,7 +96,7 @@ ul {
   color: var(--white-color);
   border: none;
   border-radius: 0.8rem;
-  font-size: 1.6rem;
+  font-size: var(--fs-sm);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -108,7 +113,7 @@ ul {
   border-bottom-left-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
   box-shadow: 0 4px 6px var(--shadow-color-2);
-  z-index: 999;
+  z-index: 900;
 }
 
 .login-btn {
@@ -117,7 +122,7 @@ ul {
 
 .nav-links ul li a {
   position: relative;
-  font-size: 1.6rem;
+  font-size: var(--fs-sm);
   color: var(--dark-blue-bg);
   padding: 0.8rem 1.5rem;
 }
@@ -158,7 +163,7 @@ ul {
 
 /* -------------side bar----------------  */
 .side-bar-toggle {
-  font-size: 2.4rem;
+  font-size: var(--fs-md);
   cursor: pointer;
   color: var(--dark-blue-bg);
 }
@@ -167,12 +172,12 @@ ul {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 50%;
+  width: clamp(260px, 50%, 420px);
   height: 100%;
   background-color: var(--white-color);
   box-shadow: -4px 0 6px var(--shadow-color-2);
   padding: 4rem 2rem;
-  z-index: 1000;
+  z-index: 1050;
   transition: 0.6s;
 }
 
@@ -193,6 +198,11 @@ ul {
   background-color: var(--mov-color);
 }
 
+.side-bar-links ul li a {
+  font-size: var(--fs-sm);
+  color: var(--dark-blue-bg);
+}
+
 /* ---------------------header container---------------- */
 .header {
   background-color: var(--container-bg);
@@ -200,14 +210,14 @@ ul {
 
 .header-content h1 {
   font-weight: 700;
-  font-size: 4.8rem;
+  font-size: var(--fs-lg);
   line-height: 1.2;
   color: var(--dark-blue-bg);
 }
 
 .header-content p {
   margin: 1.5rem 0 3rem 0;
-  font-size: 2.4rem;
+  font-size: var(--fs-md);
   color: var(--muted-text);
   line-height: 1.6;
 }
@@ -225,7 +235,7 @@ ul {
   background-color: var(--footer-title-color);
   border: none;
   border-radius: 0.8rem;
-  font-size: 1.6rem;
+  font-size: var(--fs-md);
   cursor: pointer;
   padding: 1.2rem 1rem;
 }
@@ -244,7 +254,9 @@ ul {
 }
 
 .header-img img {
-  width: 500px;
+  max-width: clamp(18rem, 32vw, 50rem);
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -261,14 +273,14 @@ ul {
 }
 
 .section-text h2 {
-  font-size: 4.8rem;
+  font-size: var(--fs-lg);
   font-weight: 700;
   color: var(--dark-blue-bg);
   margin-bottom: 1rem;
 }
 
 .section-text p {
-  font-size: 2.4rem;
+  font-size: var(--fs-md);
   font-weight: 400;
   color: var(--mov-color);
   margin-bottom: 2rem;
@@ -300,21 +312,21 @@ ul {
 }
 
 .section-one-box h3 {
-  font-size: 2.4rem;
+  font-size: var(--fs-md);
   font-weight: 700;
   color: var(--dark-blue-bg);
   margin-bottom: 1rem;
 }
 
 .section-one-box p {
-  font-size: 1.6rem;
+  font-size: var(--fs-sm);
   font-weight: 400;
   color: var(--muted-text);
 }
 
 .brands h2 {
   color: var(--gray-color);
-  font-size: 2.4rem;
+  font-size: var(--fs-md);
   font-weight: 400;
   text-align: center;
   margin: 8rem auto;
@@ -343,14 +355,14 @@ ul {
 }
 
 .section-two-box h3 {
-  font-size: 3.2rem;
+  font-size: var(--fs-md);
   font-weight: 400;
   margin: 0;
   color: var(--dark-blue-bg);
 }
 
 .section-two-box p {
-  font-size: 1.8rem;
+  font-size: var(--fs-sm);
   font-weight: 300;
   color: var(--muted-text);
   border-bottom: 1px solid var(--border-color);
@@ -371,13 +383,13 @@ ul {
 }
 
 .donation span {
-  font-size: 1.8rem;
+  font-size: var(--fs-sm);
   font-weight: 700;
   color: var(--dark-blue-bg);
 }
 
 .donation-info span {
-  font-size: 1.6rem;
+  font-size: var(--fs-sm);
   font-weight: 400;
   color: var(--muted-text);
 }
@@ -416,7 +428,7 @@ ul {
 
 /* --------------section three------------------ */
 .section-three {
-  padding: 8rem 0;
+  padding: 8rem 0 0 0;
 }
 
 .section-three .row .col-md-6 h3 {
@@ -440,17 +452,17 @@ ul {
 }
 
 .section-three .row {
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
 }
 
 .section-three .leg-img {
   position: absolute;
   right: 0;
-  transform: translateX(10rem);
+  transform: translateX(clamp(1rem, 6vw, 10rem));
 }
 
 .accordions {
-  margin-top: 12rem;
+  margin-top: 2rem;
 }
 
 .accordion-header {
@@ -487,7 +499,7 @@ ul {
 }
 
 .section-four-header-text p {
-  font-size: 2.4rem;
+  font-size: var(--fs-md);
   font-weight: 400;
   color: var(--mov-color);
   margin-bottom: 1rem;
@@ -497,13 +509,14 @@ ul {
 .section-four-header-text h2 {
   width: 65%;
   line-height: 1.5;
-  font-size: 4.8rem;
+  font-size: var(--fs-lg);
   font-weight: 700;
   color: var(--dark-blue-bg);
   font-family: Almarai, sans-serif;
 }
 
 .section-four-header button {
+  font-size: var(--fs-sm);
   padding: 1.2rem 4rem;
 }
 
@@ -565,13 +578,13 @@ ul {
 }
 
 .about-us h4 {
-  font-size: 3.2rem;
+  font-size: var(--fs-md);
   font-weight: 400;
   color: var(--dark-blue-bg);
 }
 
 .about-us p {
-  font-size: 1.8rem;
+  font-size: var(--fs-sm);
   font-weight: 400;
   color: var(--muted-text);
 }
@@ -588,7 +601,7 @@ ul {
   border: 1px solid var(--border-color);
   border-radius: 0.8rem;
   padding: 1.2rem;
-  font-size: 1.6rem;
+  font-size: var(--fs-sm);
   margin-bottom: 2rem;
   resize: none;
 }
@@ -630,7 +643,8 @@ ul {
 }
 
 .leg-img-2 {
-  height: 360px;
+  max-height: clamp(8rem, 22vh, 36rem);
+  width: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -645,7 +659,7 @@ ul {
 .footer-icons,
 .footer-links a,
 .footer-heading {
-  font-size: 1.8rem;
+  font-size: var(--fs-sm);
   color: var(--footer-title-color);
 }
 
@@ -655,7 +669,7 @@ ul {
 
 .footer-links span {
   display: block;
-  font-size: 1.4rem;
+  font-size: var(--fs-sm);
   color: var(--gray-color);
 }
 
@@ -682,7 +696,7 @@ hr {
 
 .copy-right h4,
 .copy-right a {
-  font-size: 1.6rem;
+  font-size: var(--fs-sm);
   color: var(--footer-title-color);
 }
 
@@ -702,7 +716,7 @@ hr {
 
 .go-to-another-page a {
   color: var(--white-color);
-  font-size: 2rem;
+  font-size: var(--fs-md);
 }
 
 /* ---------------------media queries---------------------  */
@@ -731,23 +745,10 @@ hr {
   html {
     font-size: 55%;
   }
-
-  .header-content h1 {
-    font-size: 3.5rem;
-  }
-
-  .header-content p {
-    font-size: 2rem;
-  }
-
-  .header-content-right {
-    padding-top: 4rem;
-  }
-
   .header-img {
-    position: relative;
-    left: auto;
-    bottom: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
     text-align: center;
   }
@@ -756,7 +757,27 @@ hr {
     width: 100%;
     max-width: 400px;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
+  }
+
+  .section-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .section-four-header-text h2 {
+    width: 80%;
+    line-height: 1.5;
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--dark-blue-bg);
+    font-family: Almarai, sans-serif;
+  }
+
+  .section-four-header button {
+    padding: 1.2rem 3rem;
   }
 }
 
@@ -764,18 +785,6 @@ hr {
 @media (max-width: 767px) {
   html {
     font-size: 50%;
-  }
-
-  .header-content h1 {
-    font-size: 3rem;
-  }
-
-  .header-content p {
-    font-size: 1.8rem;
-  }
-
-  .header-content-right {
-    padding-top: 2rem;
   }
 
   .header-img {
@@ -792,254 +801,23 @@ hr {
     height: auto;
     object-fit: contain;
   }
-}
 
-/* ------------ Desktop (≥ 1200px) ------------ */
-@media (min-width: 1200px) {
-  html {
-    font-size: 62.5%;
-  } /* 1rem = 10px */
-  .header-content h1 {
-    font-size: 4.8rem;
-  }
-  .header-content p {
-    font-size: 2.4rem;
-  }
-  .section-text h2 {
-    font-size: 4.8rem;
-  }
-  .section-text p {
-    font-size: 2.4rem;
-  }
-  .section-one-box h3 {
-    font-size: 2.4rem;
-  }
-  .section-one-box p {
-    font-size: 1.6rem;
-  }
-  .section-two-box h3 {
-    font-size: 3.2rem;
-  }
-  .section-two-box p {
-    font-size: 1.8rem;
-  }
-  .section-three .row .col-md-6 h3 {
-    font-size: 4.8rem;
-  }
-  .section-three .row .col-md-6 h4 {
-    font-size: 1.8rem;
-  }
-  .section-four-header-text h2 {
-    font-size: 4.8rem;
-  }
-  .section-four-box h3 {
-    font-size: 2.4rem;
-  }
-  .section-four-box p {
-    font-size: 1.4rem;
-  }
-  .section-five h4 {
-    font-size: 3.2rem;
-  }
-  .section-five p {
-    font-size: 1.8rem;
-  }
-
-  /* margins & paddings */
-  .section-one {
-    margin: 8rem auto;
-  }
   .section-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
     margin-bottom: 6rem;
   }
-  .section-three .row {
-    margin-bottom: 12rem;
-  }
-  .qs-form {
-    padding: 4rem;
-  }
-}
-
-/* ------------ Large Tablet (992px - 1199px) ------------ */
-@media (min-width: 992px) and (max-width: 1199px) {
-  html {
-    font-size: 58%;
-  }
-  .header-content h1 {
-    font-size: 4rem;
-  }
-  .header-content p {
-    font-size: 2rem;
-  }
-  .section-text h2 {
-    font-size: 4rem;
-  }
-  .section-text p {
-    font-size: 2rem;
-  }
-  .section-one-box h3 {
-    font-size: 2rem;
-  }
-  .section-one-box p {
-    font-size: 1.5rem;
-  }
-  .section-two-box h3 {
-    font-size: 2.8rem;
-  }
-  .section-two-box p {
-    font-size: 1.6rem;
-  }
-  .section-three .row .col-md-6 h3 {
-    font-size: 4rem;
-  }
   .section-four-header-text h2 {
-    font-size: 4rem;
-  }
-  .section-four-box h3 {
-    font-size: 2rem;
-  }
-  .section-four-box p {
-    font-size: 1.3rem;
-  }
-  .section-five h4 {
-    font-size: 2.8rem;
-  }
-  .section-five p {
-    font-size: 1.6rem;
-  }
-  .section-one {
-    margin: 6rem auto;
-  }
-  .section-text {
-    margin-bottom: 5rem;
-  }
-  .section-three .row {
-    margin-bottom: 10rem;
-  }
-  .qs-form {
-    padding: 3rem;
-  }
-}
-
-/* ------------ Tablet (768px - 991px) ------------ */
-@media (min-width: 768px) and (max-width: 991px) {
-  html {
-    font-size: 52%;
-  }
-  .header-content h1 {
-    font-size: 3.5rem;
-  }
-  .header-content p {
-    font-size: 1.8rem;
-  }
-  .section-text h2 {
-    font-size: 3.5rem;
-  }
-  .section-text p {
-    font-size: 1.8rem;
-  }
-  .section-one-box h3 {
-    font-size: 1.8rem;
-  }
-  .section-one-box p {
-    font-size: 1.4rem;
-  }
-  .section-two-box h3 {
-    font-size: 2.4rem;
-  }
-  .section-two-box p {
-    font-size: 1.4rem;
-  }
-  .section-three .row .col-md-6 h3 {
-    font-size: 3.5rem;
-  }
-  .section-four-header-text h2 {
-    font-size: 3.5rem;
-  }
-  .section-four-box h3 {
-    font-size: 1.8rem;
-  }
-  .section-four-box p {
-    font-size: 1.2rem;
-  }
-  .section-five h4 {
-    font-size: 2.4rem;
-  }
-  .section-five p {
-    font-size: 1.4rem;
-  }
-  .section-one {
-    margin: 5rem auto;
-  }
-  .section-text {
-    margin-bottom: 4rem;
-  }
-  .section-three .row {
-    margin-bottom: 8rem;
-  }
-  .qs-form {
-    padding: 2.5rem;
-  }
-}
-
-/* ------------ Mobile (≤ 767px) ------------ */
-@media (max-width: 767px) {
-  html {
-    font-size: 48%;
-  }
-  .header-content h1 {
-    font-size: 3rem;
-  }
-  .header-content p {
-    font-size: 1.6rem;
-  }
-  .section-text h2 {
-    font-size: 3rem;
-  }
-  .section-text p {
-    font-size: 1.6rem;
-  }
-  .section-one-box h3 {
-    font-size: 1.6rem;
-  }
-  .section-one-box p {
-    font-size: 1.2rem;
-  }
-  .section-two-box h3 {
-    font-size: 2rem;
-  }
-  .section-two-box p {
-    font-size: 1.2rem;
-  }
-  .section-three .row .col-md-6 h3 {
-    font-size: 3rem;
-  }
-  .section-four-header-text h2 {
-    font-size: 3rem;
-  }
-  .section-four-box h3 {
-    font-size: 1.6rem;
-  }
-  .section-four-box p {
-    font-size: 1rem;
-  }
-  .section-five h4 {
-    font-size: 2rem;
-  }
-  .section-five p {
-    font-size: 1.2rem;
+    width: 100%;
+    line-height: 1.5;
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--dark-blue-bg);
+    font-family: Almarai, sans-serif;
   }
 
-  .section-one {
-    margin: 4rem auto;
-  }
-  .section-text {
-    margin-bottom: 3rem;
-  }
-  .section-three .row {
-    margin-bottom: 6rem;
-  }
-  .qs-form {
-    padding: 2rem;
+  .section-four-header button {
+    padding: 1.2rem 1rem;
   }
 }
