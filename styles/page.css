@@ -160,6 +160,21 @@ ul {
   }
 }
 
+/* ---------------side bar------------------ */
+#mobileMenu {
+  background-color: var(--body-bg);
+  color: var(--black-color);
+}
+
+.btn-sidebar {
+  background-color: var(--mov-color) !important;
+  color: var(--white-color) !important;
+}
+
+.btn-close {
+  background-color: var(--black-color) !important;
+}
+
 /* ---------------------------------- */
 .section-text {
   width: 60%;
@@ -530,11 +545,6 @@ hr {
     padding-top: 2rem;
   }
 
-  .herosection-content-btns button,
-  .btn-core {
-    padding: 1.4rem 3rem;
-    font-size: calc(var(--fs-sm) + 0.3rem);
-  }
 }
 
 /* ------------ Mobile (أقل من 768px) ------------ */

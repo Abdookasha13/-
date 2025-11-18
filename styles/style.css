@@ -182,6 +182,21 @@ ul {
     transform: translateY(0);
   }
 }
+
+/* ---------------side bar------------------ */
+#mobileMenu{
+  background-color: var(--body-bg);
+  color: var(--black-color);
+}
+
+.btn-sidebar{
+  background-color: var(--mov-color) !important;
+  color: var(--white-color) !important;
+}
+
+.btn-close{
+  background-color: var(--black-color) !important;
+}
 /* ---------------------header container---------------- */
 .header {
   background-color: var(--container-bg);
