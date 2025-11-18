@@ -238,6 +238,7 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .right,
@@ -245,6 +246,10 @@ ul {
 .herosection-img {
   text-align: center;
   flex: 0 0 100%;
+}
+
+.right{
+  padding-right: 10rem;
 }
 
 @media (max-width: 992px) {
@@ -352,6 +357,7 @@ ul {
   opacity: 0.7;
 }
 
+/* ----------------------------statistics-section-------------------- */
 .statistics-item h2 {
   font-size: var(--fs-lg);
   font-weight: 700;
@@ -491,13 +497,6 @@ ul {
   padding: 1.2rem 8rem;
 }
 
-.leg-img-2 {
-  height: 360px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 /* -----------------------footer------------------- */
 .footer {
   background-color: var(--footer-bg);
@@ -554,6 +553,10 @@ hr {
   html {
     font-size: 62.5%;
   }
+
+  .statistics{
+    padding-inline: 10rem;
+  }
 }
 
 /* ------------ Tablet (768px - 991px) ------------ */
@@ -578,6 +581,14 @@ hr {
     width: 8.4rem;
     font-size: calc(var(--fs-lg) - 1rem);
   }
+
+  .right{
+    padding-right: 6rem;
+  }
+
+  .statistics{
+    padding-inline: 3rem;
+  }
 }
 
 /* ------------ Mobile (أقل من 768px) ------------ */
@@ -601,5 +612,9 @@ hr {
     height: 7.4rem;
     width: 7.4rem;
     font-size: calc(var(--fs-lg) - 1rem);
+  }
+
+  .right{
+    padding-right: 0;
   }
 }
