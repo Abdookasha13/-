@@ -6,10 +6,9 @@
     <title>task</title>
     <!---------font awesome---------->
     <link rel="stylesheet" href="icons-css/all.min.css" />
-    
+
     <!-----------bootstrap css------------>
     <link rel="stylesheet" href="styles/bootstrap.rtl.min.css" />
-    
 
     <!-- --------------css link-------------- -->
     <link rel="stylesheet" href="styles/style.css" />
@@ -44,19 +43,57 @@
           </div>
           <!-- ---------------login button---------------- -->
           <button class="btn-core login-btn">تسجيل الدخول</button>
-          <!-- ---------------side bar--------------- -->
-          <div class="side-bar d-xl-none">
-            <div class="side-bar-toggle">
-              <i class="fa-solid fa-bars"></i>
+          <!-- --------------- Offcanvas Sidebar --------------- -->
+          <button
+            class="btn btn-dark p-3 d-xl-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start d-xl-none"
+            tabindex="-1"
+            id="mobileMenu"
+            aria-labelledby="mobileMenuLabel"
+            style="width: 260px"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="mobileMenuLabel">القائمة</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-            <div class="side-bar-links">
-              <ul class="d-flex align-items-center gap-4 flex-column">
-                <li><a href="#section-1">عن بتور</a></li>
-                <li><a href="#section-2">البرامج</a></li>
-                <li><a href="#section-3">العناية بالاطراف الصناعية</a></li>
-                <li><a href="#section-4">من نحن</a></li>
-                <li><a href="#section-5">المقالات</a></li>
-                <li><a href="#section-6">المركز الاعلامي</a></li>
+
+            <div class="offcanvas-body">
+              <ul class="list-unstyled d-flex flex-column gap-3">
+                <li>
+                  <a class="text-decoration-none" href="#section-1">عن بتور</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#section-2">البرامج</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#section-3"
+                    >العناية بالاطراف الصناعية</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#section-4">من نحن</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#section-5">المقالات</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#section-6"
+                    >المركز الاعلامي</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -807,7 +844,7 @@
 
     <!-- --------------------Quick donation--------------------- -->
     <div class="quick-donation">
-     <span> التبرع السريع </span><i class="fa-solid fa-circle-plus"></i>
+      <span> التبرع السريع </span><i class="fa-solid fa-circle-plus"></i>
     </div>
 
     <!-- ------------------------js files--------------------- -->

@@ -160,48 +160,6 @@ ul {
   }
 }
 
-/* -------------side bar----------------  */
-.side-bar-toggle {
-  font-size: var(--fs-md);
-  cursor: pointer;
-  color: var(--dark-blue-bg);
-}
-
-.side-bar-links {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: clamp(260px, 50%, 420px);
-  height: 100%;
-  background-color: var(--white-color);
-  box-shadow: -4px 0 6px var(--shadow-color-2);
-  padding: 4rem 2rem;
-  z-index: 1050;
-  transition: 0.6s;
-}
-
-.side-bar-links.open-side-bar {
-  right: 0;
-}
-
-.side-bar-links ul li {
-  text-align: center;
-  width: 100%;
-  padding: 1rem 0;
-  border: 1px solid var(--dark-blue-bg);
-  border-radius: 0.8rem;
-  transition: 0.6s;
-}
-
-.side-bar-links ul li:hover {
-  background-color: var(--mov-color);
-}
-
-.side-bar-links ul li a {
-  font-size: var(--fs-sm);
-  color: var(--dark-blue-bg);
-}
-
 /* ---------------------------------- */
 .section-text {
   width: 60%;

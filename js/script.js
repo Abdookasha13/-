@@ -1,12 +1,3 @@
-// -------------------------handle side bar------------------
-document
-  .getElementsByClassName("side-bar-toggle")[0]
-  .addEventListener("click", function () {
-    document
-      .getElementsByClassName("side-bar-links")[0]
-      .classList.toggle("open-side-bar");
-  });
-
 // ------------------------handle show box-------------------
 const showAllBtn = document.querySelector(".show-all-btn button");
 const hideBox = document.querySelector(".hide-box");
