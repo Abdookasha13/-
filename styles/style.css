@@ -762,7 +762,7 @@ hr {
 
 .quick-donation img {
   background-color: var(--mov-color);
-  padding: 2rem 2rem;
+  padding: 1.5rem 2rem;
   border-top-left-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
   display: flex;
