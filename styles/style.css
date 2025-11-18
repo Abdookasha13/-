@@ -750,14 +750,14 @@ hr {
 }
 
 .quick-donation i {
-background-color: var(--mov-color);
-color: var(--white-color);
-padding: 2rem 2rem;
-border-top-left-radius: 0.8rem;
-border-bottom-left-radius: 0.8rem;
-display: flex;
-align-items: center;
-justify-content: center;
+  background-color: var(--mov-color);
+  color: var(--white-color);
+  padding: 2rem 2rem;
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------media queries---------------------  */
@@ -805,7 +805,7 @@ justify-content: center;
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   .section-four-header-text h2 {
@@ -834,6 +834,8 @@ justify-content: center;
 
   .header-content p {
     font-size: calc(var(--fs-md) + 0.7rem);
+    margin: 1rem 0;
+    line-height: 1.4;
   }
 
   .section-text p,
@@ -867,6 +869,10 @@ justify-content: center;
     text-align: center;
   }
 
+  .header-content-right {
+    padding-top: 1rem;
+  }
+
   .icon-circle i {
     font-size: 3.4rem;
   }
@@ -882,7 +888,7 @@ justify-content: center;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
   .section-four-header-text h2 {
     width: 100%;
@@ -900,6 +906,10 @@ justify-content: center;
   .accordion-custom .accordion-button {
     font-size: calc(var(--fs-sm) + 0.4rem);
     padding: 1rem 1rem;
+  }
+
+  .section-three .row {
+    margin-bottom: 6rem;
   }
 
   .section-four-header button {
