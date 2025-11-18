@@ -500,7 +500,6 @@ ul {
   margin-top: 2rem;
 }
 
-
 /* ------------------section four------------------- */
 .section-four {
   background-color: var(--container-bg);
@@ -728,6 +727,39 @@ hr {
   font-size: var(--fs-md);
 }
 
+/* -----------------quick-donation--------------------- */
+.quick-donation {
+  position: fixed;
+  bottom: 8rem;
+  left: 2rem;
+  background-color: var(--white-color);
+  color: var(--mov-color);
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 6px var(--shadow-color-2);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quick-donation span {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.quick-donation i {
+background-color: var(--mov-color);
+color: var(--white-color);
+padding: 2rem 2rem;
+border-top-left-radius: 0.8rem;
+border-bottom-left-radius: 0.8rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 /* ---------------------media queries---------------------  */
 
 @media (min-width: 991px) {
@@ -752,7 +784,7 @@ hr {
 /* ------------ Tablet (768px - 991px) ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
   .header-img {
     position: absolute;
@@ -793,7 +825,38 @@ hr {
 /* ------------ Mobile (أقل من 768px) ------------ */
 @media (max-width: 767px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
+  }
+
+  .header-content h1 {
+    font-size: calc(var(--fs-lg) + 0.5rem);
+  }
+
+  .header-content p {
+    font-size: calc(var(--fs-md) + 0.7rem);
+  }
+
+  .section-text p,
+  .section-one-box p,
+  .section-two-box p,
+  .section-four-box p,
+  .about-us p {
+    font-size: calc(var(--fs-sm) + 0.6rem);
+  }
+
+  .section-text h2,
+  .section-one-box h3,
+  .section-two-box h3,
+  .section-four-box h3,
+  .about-us h4 {
+    font-size: calc(var(--fs-md) + 0.8rem);
+  }
+
+  button,
+  .btn-core,
+  .section-four-header button {
+    padding: 1.4rem 3rem;
+    font-size: calc(var(--fs-sm) + 0.3rem);
   }
 
   .header-img {
@@ -804,9 +867,13 @@ hr {
     text-align: center;
   }
 
+  .icon-circle i {
+    font-size: 3.4rem;
+  }
+
   .header-img img {
     width: 100%;
-    max-width: 350px;
+    max-width: 420px;
     height: auto;
     object-fit: contain;
   }
@@ -824,6 +891,15 @@ hr {
     font-weight: 700;
     color: var(--dark-blue-bg);
     font-family: Almarai, sans-serif;
+  }
+
+  .accordions {
+    margin-top: 0;
+  }
+
+  .accordion-custom .accordion-button {
+    font-size: calc(var(--fs-sm) + 0.4rem);
+    padding: 1rem 1rem;
   }
 
   .section-four-header button {
