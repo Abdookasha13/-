@@ -1,5 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+  font-family: "Almarai";
+  src: url("../fonts/Almarai-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../fonts/Almarai-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("../fonts/Amiri-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("../fonts/Amiri-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
 
 :root {
   --body-bg: #fcfcfd;
@@ -545,6 +566,16 @@ hr {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 6rem;
+  }
+
+  .herosection-content-top .right {
+    padding-top: 2rem;
+  }
+
+  .herosection-content-btns button,
+  .btn-core {
+    padding: 1.4rem 3rem;
+    font-size: calc(var(--fs-sm) + 0.3rem);
   }
 }
 

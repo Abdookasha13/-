@@ -1,5 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+  font-family: "Almarai";
+  src: url("../fonts/Almarai-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../fonts/Almarai-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("../fonts/Amiri-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("../fonts/Amiri-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
 
 :root {
   --body-bg: #fcfcfd;
@@ -237,7 +259,7 @@ ul {
   border-radius: 0.8rem;
   font-size: var(--fs-md);
   cursor: pointer;
-  padding: 1.2rem 1rem;
+  padding: 0.9rem 1rem;
 }
 
 .warning {
@@ -820,6 +842,10 @@ hr {
   .section-four-header button {
     padding: 1.2rem 3rem;
   }
+
+  .icon-circle i {
+    font-size: 2.2rem;
+  }
 }
 
 /* ------------ Mobile (أقل من 768px) ------------ */
@@ -874,7 +900,7 @@ hr {
   }
 
   .icon-circle i {
-    font-size: 3.4rem;
+    font-size: 2rem;
   }
 
   .header-img img {
