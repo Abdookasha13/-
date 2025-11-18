@@ -7,6 +7,9 @@
     <!-----------bootstrap css------------>
     <link rel="stylesheet" href="styles/bootstrap.rtl.min.css" />
 
+    <!-----------swiper css------------>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+
     <!-- --------------css link-------------- -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -193,14 +196,19 @@
       <!-- ------------brand logos------------- -->
       <div class="brands">
         <h2>تعزيز الوحدة والتعاون مع شركائنا المتفانين</h2>
-        <div
-          class="brand-logos d-flex align-items-center justify-content-between gap-4 flex-wrap mt-4"
-        >
-          <img src="images/oxfam.png" alt="brand1" />
-          <img src="images/unicef.png" alt="brand2" />
-          <img src="images/healthpartners.png" alt="brand3" />
-          <img src="images/medecins.png" alt="brand4" />
-          <img src="images/amircan-red-cross.png" alt="brand5" />
+        <!-- Slider Main Container -->
+        <div class="swiper brandSwiper mt-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/oxfam.png" /></div>
+            <div class="swiper-slide"><img src="images/unicef.png" /></div>
+            <div class="swiper-slide">
+              <img src="images/healthpartners.png" />
+            </div>
+            <div class="swiper-slide"><img src="images/medecins.png" /></div>
+            <div class="swiper-slide">
+              <img src="images/amircan-red-cross.png" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -889,8 +897,10 @@
     </div>
 
     <!-- ------------------------js files--------------------- -->
-    <script src="js/script.js" defer></script>
     <!-----------bootstrap js------------>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-----------swiper js------------>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

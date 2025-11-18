@@ -87,3 +87,23 @@ const darkModeToggle = document.querySelector(".dark-mode");
 darkModeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
+
+//-------------------------swiper---------------------------
+const swiper = new Swiper(".brandSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  speed: 3000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  freeMode: true,
+  freeModeMomentum: false,
+  breakpoints: {
+    320: { slidesPerView: 2, spaceBetween: 10 },
+    576: { slidesPerView: 2, spaceBetween: 15 },
+    768: { slidesPerView: 3, spaceBetween: 20 },
+    992: { slidesPerView: 4, spaceBetween: 25 },
+  },
+});

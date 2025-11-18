@@ -329,6 +329,32 @@ ul {
   margin: 8rem auto;
 }
 
+.brandSwiper {
+  width: 100%;
+}
+
+.brandSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandSwiper img {
+  /* width: 120px;
+  height: auto; */
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.brandSwiper img:hover {
+  opacity: 1;
+}
+
+.brandSwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+
 /* -----------------------section two----------------- */
 .section-two {
   padding-top: 8rem;
