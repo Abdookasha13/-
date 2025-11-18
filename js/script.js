@@ -86,6 +86,4 @@ function validateEmail(email) {
 const darkModeToggle = document.querySelector(".dark-mode");
 darkModeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  darkModeToggle.classList.toggle("fa-moon");
-  darkModeToggle.classList.toggle("fa-sun");
 });

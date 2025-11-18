@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>task</title>
-    <!---------font awesome---------->
-    <link rel="stylesheet" href="icons-css/all.min.css" />
-
     <!-----------bootstrap css------------>
     <link rel="stylesheet" href="styles/bootstrap.rtl.min.css" />
 
@@ -23,7 +20,12 @@
         <!-- -----------------logo---------------- -->
         <div class="logo d-flex align-items-center gap-3">
           <h2>بتور</h2>
-          <i class="fa-solid fa-moon dark-mode"></i>
+          <!-- --------------- dark mode ---------------- -->
+          <img
+            src="https://static.thenounproject.com/png/4066357-200.png"
+            alt=""
+            class="dark-mode"
+          />
         </div>
         <!-- ---------------nav links---------------- -->
         <div class="nav-links ms-5 d-none d-xl-block">
@@ -39,7 +41,7 @@
         <div class="left-nav-bar d-flex align-items-center gap-4">
           <!-- ------------------cart---------------- -->
           <div class="cart">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <img src="icons-css/shopping-cart.png" alt="سلة التسوق" />
           </div>
           <!-- ---------------login button---------------- -->
           <button class="btn-core login-btn">تسجيل الدخول</button>
@@ -50,7 +52,10 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#mobileMenu"
           >
-            <i class="fa-solid fa-bars"></i>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfDoPWAOutjycwItBTJ132yyhKEyWLCr9w2pHCUSPa4YqJOeWObfnCYoooXuoUXIwghk&usqp=CAU"
+              alt=""
+            />
           </button>
 
           <div
@@ -119,9 +124,9 @@
               <div class="header-content-btns d-flex align-items-center gap-3">
                 <button class="btn-core header-content-btn">التبرع الان</button>
                 <button class="btn-number ms-5">
-                  <span class="warning"
-                    ><i class="fa-solid fa-exclamation"></i
-                  ></span>
+                  <span class="warning">
+                    <img src="icons-css/warning-2.png" alt="" />
+                  </span>
                   +966 675 656
                 </button>
               </div>
@@ -148,7 +153,9 @@
       >
         <div class="col">
           <div class="section-one-box p-4 shadow-sm">
-            <span class="center"><i class="fa-solid fa-globe"></i></span>
+            <span class="center"
+              ><img src="icons-css/global.png" alt=""
+            /></span>
             <h3>الرعاية الصحية الأولية</h3>
             <p>
               تقديم رعاية طبية حيوية مصممة خصيصًا لتلبية الاحتياجات الفريدة
@@ -159,7 +166,9 @@
 
         <div class="col">
           <div class="section-one-box r p-4 shadow-sm">
-            <span class="center"><i class="fa-solid fa-globe"></i></span>
+            <span class="center"
+              ><img src="icons-css/global.png" alt=""
+            /></span>
             <h3>الدعم المالي</h3>
             <p>
               التمويل لضمان حصول مبتوري الاطراف علي الاطراف الصناعية من أجل
@@ -170,7 +179,9 @@
 
         <div class="col">
           <div class="section-one-box p-4 shadow-sm">
-            <span class="center"><i class="fa-solid fa-globe"></i></span>
+            <span class="center"
+              ><img src="icons-css/global.png" alt=""
+            /></span>
             <h3>الرعاية الصحية الأولية</h3>
             <p>
               تقديم رعاية طبية حيوية مصممة خصيصًا لتلبية الاحتياجات الفريدة
@@ -237,7 +248,9 @@
               <div
                 class="d-flex align-items-center justify-content-between px-5 my-3 donation-cart"
               >
-                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span
+                  ><img src="icons-css/shopping-cart.png" alt="سلة التسوق"
+                /></span>
                 <button class="btn-core">تبرع الأن</button>
               </div>
             </div>
@@ -273,7 +286,9 @@
               <div
                 class="d-flex align-items-center justify-content-between px-5 my-3 donation-cart"
               >
-                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span
+                  ><img src="icons-css/shopping-cart.png" alt="سلة التسوق"
+                /></span>
                 <button class="btn-core">تبرع الأن</button>
               </div>
             </div>
@@ -314,7 +329,7 @@
               <div
                 class="d-flex align-items-center justify-content-between px-5 my-3 donation-cart"
               >
-                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span><img src="icons-css/shopping-cart.png" alt="" /></span>
                 <button class="btn-core">تبرع الأن</button>
               </div>
             </div>
@@ -350,7 +365,7 @@
               <div
                 class="d-flex align-items-center justify-content-between px-5 my-3 donation-cart"
               >
-                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span><img src="icons-css/shopping-cart.png" alt="" /></span>
                 <button class="btn-core">تبرع الأن</button>
               </div>
             </div>
@@ -610,9 +625,14 @@
               />
               <div class="p-4">
                 <h3>تحويل المجتمعات من خلال المشاريع المستدامة</h3>
-                <span class="mt-4 d-block"
-                  ><i class="fa-regular fa-calendar"></i> 21 أغسطس 2023</span
-                >
+                <div class="mt-4 calendar-wrapper">
+                  <img
+                    src="icons-css/calendar.png"
+                    alt=""
+                    class="calendar-icon"
+                  />
+                  <span class="calendar-text">21 أغسطس 2023</span>
+                </div>
                 <p class="my-4">
                   العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع,
                   المجتمعات المتماسكة اجتماعياً مجهزة بشكل أفضل للتغلب على
@@ -631,9 +651,14 @@
               />
               <div class="p-4">
                 <h3>تحويل المجتمعات من خلال المشاريع المستدامة</h3>
-                <span class="mt-4 d-block"
-                  ><i class="fa-regular fa-calendar"></i> 21 أغسطس 2023</span
-                >
+                <div class="mt-4 calendar-wrapper">
+                  <img
+                    src="icons-css/calendar.png"
+                    alt=""
+                    class="calendar-icon"
+                  />
+                  <span class="calendar-text">21 أغسطس 2023</span>
+                </div>
                 <p class="my-4">
                   العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع,
                   المجتمعات المتماسكة اجتماعياً مجهزة بشكل أفضل للتغلب على
@@ -652,9 +677,15 @@
               />
               <div class="p-4">
                 <h3>تحويل المجتمعات من خلال المشاريع المستدامة</h3>
-                <span class="mt-4 d-block"
-                  ><i class="fa-regular fa-calendar"></i> 21 أغسطس 2023</span
-                >
+                <div class="mt-4 calendar-wrapper">
+                  <img
+                    src="icons-css/calendar.png"
+                    alt=""
+                    class="calendar-icon"
+                  />
+                  <span class="calendar-text">21 أغسطس 2023</span>
+                </div>
+
                 <p class="my-4">
                   العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع,
                   المجتمعات المتماسكة اجتماعياً مجهزة بشكل أفضل للتغلب على
@@ -676,13 +707,13 @@
       </div>
       <div class="row align-items-center g-5">
         <!-- ---------------------right side----------------- -->
-        <div class="col-md-6 mb-4 d-flex flex-column gap-5">
-          <div class="d-flex align-items-center gap-4">
+        <div class="col-md-6 mb-4 d-flex flex-column gap-3 gap-lg-5">
+          <div class="d-flex align-items-center gap-3 gap-lg-4">
             <span class="icon-circle center"
-              ><i class="fa-solid fa-location-dot"></i
-            ></span>
+              ><img src="icons-css/location.png" alt=""
+            /></span>
             <div
-              class="d-flex flex-column justify-content-center gap-3 about-us"
+              class="d-flex flex-column justify-content-center gap-1 gap-lg-3 about-us"
             >
               <h4>الرياض - حي المروج</h4>
               <p>
@@ -691,12 +722,12 @@
               </p>
             </div>
           </div>
-          <div class="d-flex align-items-center gap-4">
+          <div class="d-flex align-items-center gap-3 gap-lg-4">
             <span class="icon-circle center"
-              ><i class="fa-solid fa-phone"></i
-            ></span>
+              ><img src="icons-css/call-outgoing.png" alt=""
+            /></span>
             <div
-              class="d-flex flex-column justify-content-center gap-3 about-us"
+              class="d-flex flex-column justify-content-center gap-1 gap-lg-3 about-us"
             >
               <h4>0112777900 / 0552300321</h4>
               <p>
@@ -705,12 +736,12 @@
               </p>
             </div>
           </div>
-          <div class="d-flex align-items-center gap-4">
+          <div class="d-flex align-items-center gap-3 gap-lg-4">
             <span class="icon-circle center"
-              ><i class="fa-solid fa-envelope"></i
-            ></span>
+              ><img src="icons-css/sms.png" alt=""
+            /></span>
             <div
-              class="d-flex flex-column justify-content-center gap-3 about-us"
+              class="d-flex flex-column justify-content-center gap-1 gap-lg-3 about-us"
             >
               <h4>info@a-ca.sa</h4>
               <p>
@@ -778,10 +809,10 @@
               قدراتهم الذاتية في خدمة أنفسهم وأسرهم دون الحاجة لمساعة الآخرين
             </p>
             <div class="footer-icons d-flex align-items-center gap-3">
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-square-facebook"></i>
-              <i class="fa-brands fa-whatsapp"></i>
-              <i class="fa-brands fa-pinterest"></i>
+              <img src="icons-css/instgram.png" alt="" />
+              <img src="icons-css/facebook.png" alt="" />
+              <img src="icons-css/whatsapp.png" alt="" />
+              <img src="icons-css/Pintrest.png" alt="" />
             </div>
           </div>
           <div
@@ -838,13 +869,23 @@
     <!-- -----------------go to another page--------------------- -->
     <div class="go-to-another-page center">
       <a href="prosthetic-care.html">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+        >
+          <path
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793L9.146 4.354a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+          />
+        </svg>
       </a>
     </div>
 
     <!-- --------------------Quick donation--------------------- -->
     <div class="quick-donation">
-      <span> التبرع السريع </span><i class="fa-solid fa-circle-plus"></i>
+      <span> التبرع السريع </span><img src="icons-css/add-circle.png" alt="" />
     </div>
 
     <!-- ------------------------js files--------------------- -->

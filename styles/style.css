@@ -22,7 +22,6 @@
   font-weight: 700;
 }
 
-
 :root {
   --body-bg: #fcfcfd;
   --container-bg: #e5e2f7;
@@ -66,7 +65,6 @@
   --text-color: #d1d5db;
   --muted-text: #9ca3af;
   --muted-text-2: #6b7280;
-  --cart-color: #2c2c2c;
   --shadow-color: rgba(0, 0, 0, 0.5);
   --shadow-color-2: #00000080;
 }
@@ -184,22 +182,34 @@ ul {
 }
 
 /* ---------------side bar------------------ */
-#mobileMenu{
+#mobileMenu {
   background-color: var(--body-bg);
   color: var(--black-color);
 }
 
-.btn-sidebar{
+.btn-sidebar {
   background-color: var(--mov-color) !important;
-  color: var(--white-color) !important;
 }
 
-.btn-close{
+.btn-sidebar img{
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  border-radius: 0.2rem;
+}
+
+.btn-close {
   background-color: var(--black-color) !important;
 }
 /* ---------------------header container---------------- */
 .header {
   background-color: var(--container-bg);
+}
+
+.logo img {
+  width: var(--fs-lg);
+  height: auto;
+  cursor: pointer;
 }
 
 .header-content h1 {
@@ -232,13 +242,6 @@ ul {
   font-size: var(--fs-md);
   cursor: pointer;
   padding: 0.9rem 1rem;
-}
-
-.warning {
-  background-color: var(--mov-color);
-  color: var(--white-color);
-  padding: 0.6rem 1rem;
-  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
 }
 
 .header-img {
@@ -562,6 +565,25 @@ ul {
   padding: 1.2rem 4rem;
 }
 
+.calendar-wrapper img {
+  width: 1.6rem;
+  height: 1.6rem;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.calendar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calendar-text {
+  display: inline-block;
+}
+
+
+
 /* ------------------section five------------------- */
 .section-five {
   padding: 8rem 0;
@@ -572,11 +594,6 @@ ul {
   width: 6rem;
   background-color: var(--mov-color);
   border-radius: 50%;
-  color: var(--white-color);
-}
-
-.icon-circle i {
-  font-size: 3rem;
 }
 
 .about-us h4 {
@@ -743,9 +760,8 @@ hr {
   padding: 1rem 2rem;
 }
 
-.quick-donation i {
+.quick-donation img {
   background-color: var(--mov-color);
-  color: var(--white-color);
   padding: 2rem 2rem;
   border-top-left-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
@@ -811,8 +827,9 @@ hr {
     font-family: Almarai, sans-serif;
   }
 
-  .icon-circle i {
-    font-size: 2.2rem;
+  .icon-circle img {
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -867,8 +884,14 @@ hr {
     padding-top: 1rem;
   }
 
-  .icon-circle i {
-    font-size: 2rem;
+  .icon-circle img {
+    width: 50%;
+    height: auto;
+  }
+
+  .icon-circle {
+    height: 5rem;
+    width: 5rem;
   }
 
   .header-img img {

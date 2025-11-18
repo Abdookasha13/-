@@ -168,7 +168,13 @@ ul {
 
 .btn-sidebar {
   background-color: var(--mov-color) !important;
-  color: var(--white-color) !important;
+}
+
+.btn-sidebar img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  border-radius: 0.2rem;
 }
 
 .btn-close {
@@ -545,12 +551,11 @@ hr {
     padding-top: 2rem;
   }
 
-  .vedio-player2{
+  .vedio-player2 {
     height: 8.4rem;
     width: 8.4rem;
     font-size: calc(var(--fs-lg) - 1rem);
   }
-
 }
 
 /* ------------ Mobile (أقل من 768px) ------------ */
@@ -566,17 +571,11 @@ hr {
     margin-bottom: 6rem;
   }
 
-  .herosection-content-btns button,
-  .btn-core {
-    padding: 1.4rem 3rem;
-    font-size: calc(var(--fs-sm) + 0.3rem);
-  }
-
   .herosection-content-top .right {
     padding-top: 2rem;
   }
 
-  .vedio-player2{
+  .vedio-player2 {
     height: 7.4rem;
     width: 7.4rem;
     font-size: calc(var(--fs-lg) - 1rem);
