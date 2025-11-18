@@ -545,6 +545,12 @@ hr {
     padding-top: 2rem;
   }
 
+  .vedio-player2{
+    height: 8.4rem;
+    width: 8.4rem;
+    font-size: calc(var(--fs-lg) - 1rem);
+  }
+
 }
 
 /* ------------ Mobile (أقل من 768px) ------------ */
@@ -568,5 +574,11 @@ hr {
 
   .herosection-content-top .right {
     padding-top: 2rem;
+  }
+
+  .vedio-player2{
+    height: 7.4rem;
+    width: 7.4rem;
+    font-size: calc(var(--fs-lg) - 1rem);
   }
 }
