@@ -537,7 +537,7 @@ hr {
 /* ------------ Tablet (768px - 991px) ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
 
   .section-text {
@@ -551,7 +551,7 @@ hr {
 /* ------------ Mobile (أقل من 768px) ------------ */
 @media (max-width: 767px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
 
   .section-text {
@@ -559,5 +559,15 @@ hr {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 6rem;
+  }
+
+  .herosection-content-btns button,
+  .btn-core {
+    padding: 1.4rem 3rem;
+    font-size: calc(var(--fs-sm) + 0.3rem);
+  }
+
+  .herosection-content-top .right {
+    padding-top: 2rem;
   }
 }
