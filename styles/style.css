@@ -978,4 +978,8 @@ hr {
   .section-four-header button {
     padding: 1.2rem 1rem;
   }
+
+  .accordion-custom{
+    padding-inline: 2rem;
+  }
 }
