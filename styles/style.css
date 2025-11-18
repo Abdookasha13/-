@@ -201,6 +201,29 @@ ul {
 .btn-close {
   background-color: var(--black-color) !important;
 }
+
+.offcanvas-body ul li a {
+  font-size: var(--fs-sm);
+  color: var(--dark-blue-bg);
+  padding: 1rem 0;
+  display: block;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px var(--shadow-color-2);
+  transition: 0.3s;
+}
+
+.offcanvas-body ul li a:hover {
+  background-color: var(--mov-color);
+  color: var(--white-color);
+}
+
+.offcanvas-header h5 {
+  font-size: var(--fs-md);
+  color: var(--dark-blue-bg);
+}
 /* ---------------------header container---------------- */
 .header {
   background-color: var(--container-bg);
@@ -827,7 +850,6 @@ hr {
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
   }
 
   .header-img img {
@@ -902,8 +924,6 @@ hr {
     position: relative;
     left: auto;
     bottom: auto;
-    width: 100%;
-    text-align: center;
   }
 
   .header-content-right {
