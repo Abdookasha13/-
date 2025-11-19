@@ -25,11 +25,6 @@
 :root {
   --body-bg: #fcfcfd;
   --container-bg: #e5e2f7;
-  /* Responsive typography & spacing scale */
-  --fs-sm: clamp(1.4rem, 1rem + 0.8vw, 1.8rem);
-  --fs-md: clamp(1.6rem, 1.1rem + 1.1vw, 2.2rem);
-  --fs-lg: clamp(2.4rem, 1.8rem + 2.4vw, 4.2rem);
-
   /* ------------------- */
   --mov-color: #897ae3;
   --dark-blue-bg: #101840;
@@ -43,10 +38,19 @@
   /* ------------------------- */
   --text-color: #424045;
   --muted-text: #615d65;
-  --muted-text-2: #94a3b8;
-  --cart-color: #f5f5f5;
   --shadow-color: rgba(0, 0, 0, 0.03);
   --shadow-color-2: #1018280f;
+  /* -------------Bootstrap Custom Variables---------------- */
+  --bs-primary: var(--mov-color);
+  --bs-secondary: var(--gray-color);
+  --bs-dark: var(--dark-blue-bg);
+  --bs-light: var(--white-color);
+  --bs-body-bg: var(--body-bg);
+  --bs-body-color: var(--black-color);
+  /* Responsive typography & spacing scale */
+  --fs-sm: clamp(1.4rem, 1rem + 0.8vw, 1.8rem);
+  --fs-md: clamp(1.6rem, 1.1rem + 1.1vw, 2.2rem);
+  --fs-lg: clamp(2.4rem, 1.8rem + 2.4vw, 4.2rem);
 }
 
 .dark {
@@ -64,10 +68,17 @@
   /* ------------------------- */
   --text-color: #d1d5db;
   --muted-text: #9ca3af;
-  --muted-text-2: #6b7280;
   --shadow-color: rgba(0, 0, 0, 0.5);
   --shadow-color-2: #00000080;
+  /* -------------Bootstrap Custom Variables---------------- */
+  --bs-primary: var(--mov-color);
+  --bs-secondary: var(--gray-color);
+  --bs-dark: var(--dark-blue-bg);
+  --bs-light: var(--white-color);
+  --bs-body-bg: var(--body-bg);
+  --bs-body-color: var(--black-color);
 }
+
 
 * {
   margin: 0;
@@ -78,8 +89,8 @@
 }
 
 body {
-  background-color: var(--body-bg);
-  color: var(--black-color);
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
   overflow-x: hidden;
   font-size: var(--fs-md);
   direction: rtl;
@@ -95,7 +106,7 @@ html {
 
 a {
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--bs-body-color);
 }
 
 .center {
@@ -112,8 +123,8 @@ ul {
 
 .btn-core {
   display: inline-block;
-  background-color: var(--mov-color);
-  color: var(--white-color);
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
   border: none;
   border-radius: 0.8rem;
   font-size: var(--fs-sm);
@@ -122,13 +133,13 @@ ul {
 }
 
 .btn-core:hover {
-  background-color: var(--dark-blue-bg);
+  background-color: var(--bs-dark);
 }
 
 /* --------------navbar------------------ */
 .nav-bar {
   position: relative;
-  background-color: var(--body-bg);
+  background-color: var(--bs-body-bg);
   padding: 2rem 2rem;
   border-bottom-left-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
@@ -143,7 +154,7 @@ ul {
 .nav-links ul li a {
   position: relative;
   font-size: var(--fs-sm);
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
   padding: 0.8rem 1.5rem;
 }
 
@@ -154,7 +165,7 @@ ul {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: var(--mov-color);
+  background-color: var(--bs-primary);
   transition: width 0.4s ease;
 }
 
@@ -167,7 +178,7 @@ ul {
   top: 0;
   right: 0;
   left: 0;
-  background-color: var(--white-color);
+  background-color: var(--bs-light);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.4s ease;
 }
@@ -183,15 +194,15 @@ ul {
 
 /* ---------------side bar------------------ */
 #mobileMenu {
-  background-color: var(--body-bg);
-  color: var(--black-color);
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
 }
 
 .btn-sidebar {
-  background-color: var(--mov-color) !important;
+  background-color: var(--bs-primary) !important;
 }
 
-.btn-sidebar img{
+.btn-sidebar img {
   width: 2rem;
   height: 2rem;
   object-fit: contain;
@@ -199,12 +210,12 @@ ul {
 }
 
 .btn-close {
-  background-color: var(--black-color) !important;
+  background-color: var(--bs-body-color) !important;
 }
 
 .offcanvas-body ul li a {
   font-size: var(--fs-sm);
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
   padding: 1rem 0;
   display: block;
   text-align: center;
@@ -216,13 +227,13 @@ ul {
 }
 
 .offcanvas-body ul li a:hover {
-  background-color: var(--mov-color);
-  color: var(--white-color);
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
 }
 
 .offcanvas-header h5 {
   font-size: var(--fs-md);
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 /* ---------------------header container---------------- */
 .header {
@@ -239,7 +250,7 @@ ul {
   font-weight: 700;
   font-size: var(--fs-lg);
   line-height: 1.2;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 
 .header-content p {
@@ -258,7 +269,7 @@ ul {
 }
 
 .btn-number {
-  color: var(--mov-color);
+  color: var(--bs-primary);
   background-color: var(--footer-title-color);
   border: none;
   border-radius: 0.8rem;
@@ -295,14 +306,14 @@ ul {
 .section-text h2 {
   font-size: var(--fs-lg);
   font-weight: 700;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
   margin-bottom: 1rem;
 }
 
 .section-text p {
   font-size: var(--fs-md);
   font-weight: 400;
-  color: var(--mov-color);
+  color: var(--bs-primary);
   margin-bottom: 2rem;
   font-family: Amiri, serif;
 }
@@ -325,16 +336,16 @@ ul {
 .section-one-box span {
   height: 4rem;
   width: 4rem;
-  background-color: var(--mov-color);
+  background-color: var(--bs-primary);
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  color: var(--white-color);
+  color: var(--bs-light);
 }
 
 .section-one-box h3 {
   font-size: var(--fs-md);
   font-weight: 700;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
   margin-bottom: 1rem;
 }
 
@@ -345,7 +356,7 @@ ul {
 }
 
 .brands h2 {
-  color: var(--gray-color);
+  color: var(--bs-secondary);
   font-size: var(--fs-md);
   font-weight: 400;
   text-align: center;
@@ -377,7 +388,6 @@ ul {
   transition-timing-function: linear !important;
 }
 
-
 /* -----------------------section two----------------- */
 .section-two {
   padding-top: 8rem;
@@ -385,7 +395,7 @@ ul {
 }
 
 .section-two-box {
-  background-color: var(--white-color);
+  background-color: var(--bs-light);
   border-radius: 1.2rem;
   transition: 0.6s;
 }
@@ -404,7 +414,7 @@ ul {
   font-size: var(--fs-md);
   font-weight: 400;
   margin: 0;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 
 .section-two-box p {
@@ -424,14 +434,14 @@ ul {
 .progress-bar {
   height: 100%;
   width: 40%;
-  background-color: var(--mov-color);
+  background-color: var(--bs-primary);
   border-radius: 0.8rem;
 }
 
 .donation span {
   font-size: var(--fs-sm);
   font-weight: 700;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 
 .donation-info span {
@@ -441,16 +451,16 @@ ul {
 }
 
 .donation-cart span {
-  border: 1px solid var(--mov-color);
+  border: 1px solid var(--bs-primary);
   padding: 1rem 1.2rem;
   border-radius: 0.8rem;
-  color: var(--mov-color);
+  color: var(--bs-primary);
   transition: 0.6s;
 }
 
 .donation-cart span:hover {
-  background-color: var(--mov-color);
-  color: var(--white-color);
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
 }
 
 .donation-cart button {
@@ -480,14 +490,14 @@ ul {
 .section-three .row .col-md-6 h3 {
   font-size: 4.8rem;
   font-weight: 700;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
   margin-block: 1rem;
 }
 
 .section-three .row .col-md-6 h4 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 
 .section-three .row .col-md-6 {
@@ -555,7 +565,7 @@ ul {
 .section-four-header-text p {
   font-size: var(--fs-md);
   font-weight: 400;
-  color: var(--mov-color);
+  color: var(--bs-primary);
   margin-bottom: 1rem;
   font-family: Amiri, serif;
 }
@@ -565,7 +575,7 @@ ul {
   line-height: 1.5;
   font-size: var(--fs-lg);
   font-weight: 700;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
   font-family: Almarai, sans-serif;
 }
 
@@ -575,7 +585,7 @@ ul {
 }
 
 .section-four-box {
-  background-color: var(--white-color);
+  background-color: var(--bs-light);
   border-radius: 1.2rem;
   transition: 0.6s;
 }
@@ -593,7 +603,7 @@ ul {
 .section-four-box h3 {
   font-size: 2.4rem;
   font-weight: 400;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 
 .section-four-box p {
@@ -603,11 +613,11 @@ ul {
 }
 
 .section-four-box .fa-calendar {
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 
 .section-four-box span {
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 
 .section-four-box a {
@@ -631,8 +641,6 @@ ul {
   display: inline-block;
 }
 
-
-
 /* ------------------section five------------------- */
 .section-five {
   padding: 8rem 0;
@@ -641,14 +649,14 @@ ul {
 .icon-circle {
   height: 6rem;
   width: 6rem;
-  background-color: var(--mov-color);
+  background-color: var(--bs-primary);
   border-radius: 50%;
 }
 
 .about-us h4 {
   font-size: var(--fs-md);
   font-weight: 400;
-  color: var(--dark-blue-bg);
+  color: var(--bs-dark);
 }
 
 .about-us p {
@@ -678,7 +686,7 @@ ul {
 .qs-form textarea:focus {
   box-shadow: none;
   outline: none;
-  border-color: var(--mov-color);
+  border-color: var(--bs-primary);
 }
 
 .qs-form button {
@@ -738,7 +746,7 @@ ul {
 .footer-links span {
   display: block;
   font-size: var(--fs-sm);
-  color: var(--gray-color);
+  color: var(--bs-secondary);
 }
 
 .footer-links {
@@ -752,7 +760,7 @@ ul {
 }
 
 .footer-links a:hover {
-  color: var(--mov-color);
+  color: var(--bs-primary);
 }
 
 hr {
@@ -774,7 +782,7 @@ hr {
   position: fixed;
   bottom: 2rem;
   left: 2rem;
-  background-color: var(--mov-color);
+  background-color: var(--bs-primary);
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
@@ -783,7 +791,7 @@ hr {
 }
 
 .go-to-another-page a {
-  color: var(--white-color);
+  color: var(--bs-light);
   font-size: var(--fs-md);
 }
 
@@ -792,8 +800,8 @@ hr {
   position: fixed;
   bottom: 8rem;
   left: 2rem;
-  background-color: var(--white-color);
-  color: var(--mov-color);
+  background-color: var(--bs-light);
+  color: var(--bs-primary);
   border-radius: 0.8rem;
   box-shadow: 0 4px 6px var(--shadow-color-2);
   font-size: var(--fs-sm);
@@ -810,7 +818,7 @@ hr {
 }
 
 .quick-donation img {
-  background-color: var(--mov-color);
+  background-color: var(--bs-primary);
   padding: 1.5rem 2rem;
   border-top-left-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
@@ -871,7 +879,7 @@ hr {
     line-height: 1.5;
     font-size: var(--fs-lg);
     font-weight: 700;
-    color: var(--dark-blue-bg);
+    color: var(--bs-dark);
     font-family: Almarai, sans-serif;
   }
 
@@ -958,7 +966,7 @@ hr {
     line-height: 1.5;
     font-size: var(--fs-lg);
     font-weight: 700;
-    color: var(--dark-blue-bg);
+    color: var(--bs-dark);
     font-family: Almarai, sans-serif;
   }
 
@@ -979,7 +987,7 @@ hr {
     padding: 1.2rem 1rem;
   }
 
-  .accordion-custom{
+  .accordion-custom {
     padding-inline: 2rem;
   }
 }
