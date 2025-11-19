@@ -889,8 +889,14 @@ hr {
   }
 
   .icon-circle img {
-    width: 80%;
-    height: auto;
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-circle {
+    padding: 2rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 
@@ -944,11 +950,12 @@ hr {
   }
 
   .icon-circle img {
-    width: 50%;
-    height: auto;
+    width: 20px;
+    height: 20px;
   }
 
   .icon-circle {
+    padding: 2rem;
     height: 5rem;
     width: 5rem;
   }
@@ -997,18 +1004,18 @@ hr {
   }
 }
 
-@media (min-width: 730px) and (max-width: 770px){
-     .header-img{
-      transform: translateX(-100px);
-     }
+@media (min-width: 730px) and (max-width: 770px) {
+  .header-img {
+    transform: translateX(-100px);
+  }
 }
-@media (min-width: 700px) and (max-width: 730px){
-     .header-img{
-      transform: translateX(-80px);
-     }
+@media (min-width: 700px) and (max-width: 730px) {
+  .header-img {
+    transform: translateX(-80px);
+  }
 }
-@media (min-width: 580px) and (max-width: 700px){
-     .header-img{
-      transform: translateX(-50px);
-     }
+@media (min-width: 580px) and (max-width: 700px) {
+  .header-img {
+    transform: translateX(-50px);
+  }
 }
